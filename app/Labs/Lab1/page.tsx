@@ -66,7 +66,32 @@ export default function Lab2() {
           <li>Serve and enjoy!</li>
         </ol>
         My favorite recipe:
-        <ol id="wd-your-favorite-recipe">{/* complete on your own */}</ol>
+        <ol id="wd-your-favorite-recipe">
+          <li>
+            {" "}
+            Place your eggs in a saucepan and cover them with cold water (about
+            1 inch above the eggs).
+          </li>
+          <li> Bring the water to a boil over medium-high heat.</li>
+          <li>
+            {" "}
+            Once boiling, cover the saucepan and remove it from the heat.
+          </li>
+          <li>
+            {" "}
+            Let the eggs sit in the hot water for about 9-12 minutes, depending
+            on your desired level of doneness.
+          </li>
+          <li>
+            {" "}
+            After the time is up, carefully drain the hot water and transfer the
+            eggs to a bowl of ice water.
+          </li>
+          <li>
+            {" "}
+            Let the eggs cool for a few minutes before peeling and enjoying!
+          </li>
+        </ol>
         <h5>Unordered List Tag</h5>
         My favorite books (in no particular order)
         <ul id="wd-my-books">
@@ -77,7 +102,11 @@ export default function Lab2() {
           <li>The Forever War</li>
         </ul>
         Your favorite books (in no particular order)
-        <ul id="wd-your-books">{/* complete on your own */}</ul>
+        <ul id="wd-your-books">
+          <li>1984</li>
+          <li>Final Empire</li>
+          <li>East of Eden</li>
+        </ul>
       </div>
       <div id="wd-tables">
         <h4>Table Tag</h4>
@@ -149,21 +178,17 @@ export default function Lab2() {
             title="The last name"
             id="wd-text-fields-last-name"
           />
-          {/* copy rest of form elements here  */}
         </form>
       </div>
       <h5>Text boxes</h5>
       <label>Biography:</label>
       <br />
-      <textarea id="wd-textarea" cols={30} rows={10}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </textarea>
+      <textarea
+        id="wd-textarea"
+        cols={30}
+        rows={10}
+        defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      />
       <h5 id="wd-buttons">Buttons</h5>
       <button
         type="button"
@@ -173,18 +198,14 @@ export default function Lab2() {
         Hello World!
       </button>
       <h5 id="wd-radio-buttons">Radio buttons</h5>
-
       <label>Favorite movie genre:</label>
       <br />
-
       <input type="radio" name="radio-genre" id="wd-radio-comedy" />
       <label htmlFor="wd-radio-comedy">Comedy</label>
       <br />
-
       <input type="radio" name="radio-genre" id="wd-radio-drama" />
       <label htmlFor="wd-radio-drama">Drama</label>
       <br />
-
       <input type="radio" name="radio-genre" id="wd-radio-scifi" />
       <label htmlFor="wd-radio-scifi">Science Fiction</label>
       <br />
@@ -193,23 +214,18 @@ export default function Lab2() {
       <h5 id="wd-checkboxes">Checkboxes</h5>
       <label>Favorite movie genre:</label>
       <br />
-
       <input type="checkbox" name="check-genre" id="wd-chkbox-comedy" />
       <label htmlFor="wd-chkbox-comedy">Comedy</label>
       <br />
-
       <input type="checkbox" name="check-genre" id="wd-chkbox-drama" />
       <label htmlFor="wd-chkbox-drama">Drama</label>
       <br />
-
       <input type="checkbox" name="check-genre" id="wd-chkbox-scifi" />
       <label htmlFor="wd-chkbox-scifi">Science Fiction</label>
       <br />
-
       <input type="checkbox" name="check-genre" id="wd-chkbox-fantasy" />
       <label htmlFor="wd-chkbox-fantasy">Fantasy</label>
       <h4 id="wd-dropdowns">Dropdowns</h4>
-
       <h5>Select one</h5>
       <label htmlFor="wd-select-one-genre"> Favorite movie genre: </label>
       <br />
@@ -221,7 +237,6 @@ export default function Lab2() {
         </option>
         <option value="FANTASY">Fantasy</option>
       </select>
-
       <h5>Select many</h5>
       <label htmlFor="wd-select-many-genre"> Favorite movie genres: </label>
       <br />
@@ -272,9 +287,12 @@ export default function Lab2() {
         <br />
       </form>
       <h4>Anchor tag</h4>
-Please
-<a href="https://www.lipsum.com" id="wd-github">click here</a>
-to get dummy text<br/>
+      Please
+      <a href="https://www.lipsum.com" id="wd-github">
+        click here
+      </a>
+      to get dummy text
+      <br />
     </div>
   );
 }
