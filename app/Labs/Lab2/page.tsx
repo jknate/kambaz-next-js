@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import "./index.css";
 import Container from "react-bootstrap/esm/Container";
 import ForegroundColors from "./ForegroundColors";
