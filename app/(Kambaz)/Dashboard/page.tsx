@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { useState } from "react";
 import Link from "next/link";
@@ -100,10 +101,10 @@ export default function Dashboard() {
             .filter((course: any) => {
               // If showing all courses, show everything
               if (showAllCourses) return true;
-              
+
               // If no user is logged in, show all courses (for browsing)
               if (!currentUser) return true;
-              
+
               // If user is logged in, show only enrolled courses
               return enrollments.some(
                 (enrollment: any) =>
