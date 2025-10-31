@@ -8,12 +8,14 @@ import { BsGripVertical, BsChevronDown, BsChevronUp } from "react-icons/bs";
 import { FaEdit } from "react-icons/fa";
 import AssignmentControls from "./AssignmentControls";
 import AssignmentControlButtons from "./AssignmentControlButtons";
-import * as db from "../../../Database";
+import { useSelector, useDispatch } from "react-redux";
+import { deleteAssignment } from "./reducer";
 
 export default function Assignments() {
   const { cid } = useParams();
   const [isAssignmentsOpen, setIsAssignmentsOpen] = useState(true);
-  const assignments = db.assignments;
+  const { assignments } = useSelector((state: any) => state.assignmentsReducer);
+  const dispatch = useDispatch();
 
   return (
     <div id="wd-assignments">
@@ -75,7 +77,18 @@ export default function Assignments() {
                             </div>
                           </div>
                         </div>
-                        <AssignmentControlButtons />
+                        <AssignmentControlButtons
+                          assignmentId={assignment._id}
+                          deleteAssignment={(assignmentId) => {
+                            if (
+                              window.confirm(
+                                "Are you sure you want to remove this assignment?"
+                              )
+                            ) {
+                              dispatch(deleteAssignment(assignmentId));
+                            }
+                          }}
+                        />
                       </div>
                     </ListGroupItem>
                   ))}
