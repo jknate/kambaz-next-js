@@ -23,6 +23,16 @@ export default function Labs() {
             Lab 3: JavaScript Fundamentals
           </Link>
         </li>
+        <li>
+          <Link href="/Labs/Lab4" id="wd-lab4-link">
+            Lab 4: React State and Props
+          </Link>
+        </li>
+        <li>
+          <Link href="/Labs/Lab5" id="wd-lab5-link">
+            Lab 5: Node.js and HTTP Client
+          </Link>
+        </li>
       </ul>
     </div>
   );
