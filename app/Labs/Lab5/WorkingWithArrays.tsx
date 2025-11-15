@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import FormControl from "react-bootstrap/FormControl";
 
-const HTTP_SERVER = process.env.NEXT_PUBLIC_HTTP_SERVER;
+const HTTP_SERVER = "/api/proxy";
 
 export default function WorkingWithArrays() {
   const API = `${HTTP_SERVER}/lab5/todos`;

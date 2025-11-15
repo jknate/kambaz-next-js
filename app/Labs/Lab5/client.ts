@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const HTTP_SERVER = process.env.NEXT_PUBLIC_HTTP_SERVER;
+// Use proxy to avoid CORS issues
+const HTTP_SERVER = "/api/proxy";
 
 export const fetchWelcomeMessage = async (): Promise<string> => {
   const response = await axios.get(`${HTTP_SERVER}/lab5/welcome`);
