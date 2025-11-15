@@ -8,6 +8,14 @@ export default function Labs() {
       <Link href="https://github.com/jknate/kambaz-next-js" id="wd-github">
         https://github.com/jknate/kambaz-next-js
       </Link>
+      <br />
+      <Link href="https://github.com/jknate/kambaz-node-server-app" id="wd-backend-server">
+        https://github.com/jknate/kambaz-node-server-app
+      </Link>
+      <br />
+      <Link href="https://kambaz-node-server-app-ttnj.onrender.com/" id="wd-live-server">
+        https://kambaz-node-server-app-ttnj.onrender.com/
+      </Link>
       <ul>
         <li>
           <Link href="/Labs/Lab1" id="wd-lab1-link">

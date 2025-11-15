@@ -70,6 +70,16 @@ export default function TOC() {
           My GitHub
         </NavLink>
       </NavItem>
+      <NavItem>
+        <NavLink href="https://github.com/jknate/kambaz-node-server-app">
+          Backend Server
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink href="https://kambaz-node-server-app-ttnj.onrender.com/">
+          Live Server
+        </NavLink>
+      </NavItem>
     </Nav>
   );
 }
