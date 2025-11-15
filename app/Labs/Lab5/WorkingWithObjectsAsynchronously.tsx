@@ -40,6 +40,7 @@ export default function WorkingWithObjectsAsynchronously() {
         }
       />
       <FormControl
+        as="textarea"
         rows={3}
         defaultValue={assignment.description}
         className="mb-2 w-75"
