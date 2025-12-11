@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -51,7 +52,7 @@ export default function KambazNavigation() {
       </ListGroupItem>
       {links.map((link) => (
         <ListGroupItem
-          key={link.path}
+          key={link.label}
           as={Link}
           href={link.path}
           className={`bg-black text-center border-0 ${
